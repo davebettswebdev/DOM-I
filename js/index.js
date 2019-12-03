@@ -73,6 +73,10 @@ for (let i = 0; i <navLinks.length; i++){
 let ctaText = document.getElementsByTagName('h1');
   ctaText[0].innerHTML = siteContent['cta']['h1']
 
+  for (let i = 0; i <ctaText.length; i++){
+    ctaText[i].style.color = "red";
+  }
+
 let ctaButton = document.getElementsByTagName('button');
   ctaButton[0].innerHTML = siteContent['cta']['button']
 
@@ -89,6 +93,11 @@ let mainText = document.getElementsByTagName('p');
   mainText[2].innerHTML = siteContent['main-content']['services-content']
   mainText[3].innerHTML = siteContent['main-content']['product-content']
   mainText[4].innerHTML = siteContent['main-content']['vision-content']
+
+  for (let i = 0; i <mainText.length; i++){
+    mainText[i].style.color = "blue";
+    mainText[i].style.fontFamily = "timesnewroman";
+  }
 
 let contactHeader = document.getElementsByTagName('h4');
   contactHeader[5].innerHTML = siteContent['contact']['contact-h4']
